@@ -1,0 +1,10 @@
+﻿using Builder;
+Chair chair;
+Director director = new Director();
+MinimalisticChair minimalistic = new MinimalisticChair();
+chair = director.MakeChair(minimalistic);
+chair.ShowChair();
+Console.WriteLine("\n");
+PopArtChair popArt = new PopArtChair();
+chair = director.MakeChair(popArt);
+chair.ShowChair();
